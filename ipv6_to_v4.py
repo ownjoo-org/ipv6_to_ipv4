@@ -13,6 +13,5 @@ def main(ip_str) -> str:
 
 
 if __name__ == '__main__':
-    for line in stdin:
-        stdout.write(main(ip_str=line.rstrip()))
-        stdout.flush()
+    for ipv6 in stdin:
+        stdout.write(main(ip_str=ipv6.rstrip()))
